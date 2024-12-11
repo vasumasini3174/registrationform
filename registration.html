@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body style="display: flex; justify-content: center; height: 230px; ">
+    <form id="form" style="border: 10px; background-color: pink; border-color: black;">
+        <h3 style="display: flex; justify-content: center; height: 10px;">Registration Form</h3>
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" placeholder="Enter your full name" required></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" placeholder="Enter your mail address" required></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="male" id="female">Male
+                    <input type="radio" name="female" id="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number: </td>
+                <td><input type="number" id="number" placeholder="Enter your phone number" required></td>
+            </tr>
+            <tr>
+                <td><br>
+                    <input type="submit" name="submit" id="button" style="display: flex; justify-content: center;"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        document.getElementById("button").addEventListener('click',()=>{
+            alert("You have successfully registered");
+        });
+    </script>
+</body>
+</html>
